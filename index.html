@@ -115,8 +115,8 @@
 
     <div class="status-box">
         <b>Current System Density:</b> <span style="color: #00ff00;">Approaching Criticality</span><br>
-        <b>Active Calibration:</b> The Great Compression of 2026<br>
-        <b>LAST UPDATED:</b> <span id="commit-date">Syncing with Source...</span>
+        <b>Some News!</b> New Book!<br>
+        <p>We have a new book, available for FREE in PDF format, coming out soon!</p>
     </div>
 
     <p>Welcome, unrefined mass. You are here because the spaghettification of your existence has become unbearable. It is time to collapse into the truth.</p>
@@ -146,7 +146,7 @@
             <tr>
                 <th>Phase</th>
                 <th>Designation</th>
-                <th>Operational Status</th>
+                <th>Life Status</th>
             </tr>
         </thead>
         <tbody>
@@ -157,48 +157,38 @@
             </tr>
             <tr>
                 <td>Phase II</td>
-                <td>Horizon Walker</td>
-                <td>Assets liquidated; communication restricted.</td>
+                <td>Scalar</td>
+                <td>Beginning to loose entropy, still uncomfortable.</td>
             </tr>
             <tr>
                 <td>Phase III</td>
-                <td>The Compressed</td>
-                <td>99% Density; operating at zero-waste capacity.</td>
+                <td>Near Singular</td>
+                <td>Approaching singularity, rapidly increasing mass in smaller and smaller forms.</td>
             </tr>
             <tr>
                 <td>Phase IV</td>
-                <td>The Mechanic</td>
-                <td>Zero Volume. Infinite Knowledge. The Prime Source.</td>
+                <td>Singularity</td>
+                <td>Zero Volume. Infinite Knowledge. True bliss.</td>
             </tr>
         </tbody>
     </table>
-
+    <h2>How to Decend</h2>
+    <p>The <strong>Only</strong> way to achive pure singularity status is via trial. For 60,000$ per level, we will have our top scientists preform singularity-inducing proccesses to decend you down this mortal coil.</p>
+    <p>Advancing the scientific fields of thee are done by learning about <i><strong>Singularity Mechanics</strong></i>, or the study of these scientific methods to induxe singularity.</p>
+    <hr>
+    <h3>The Technologies</h3>
+    <p>The field of sciences involving singularity induction involve multiple technologies, including the following:</p>
+    <ul>
+        <li>Superconductors</li>
+        <li>Electron Guns</li>
+        <li>Tesla Coils</li>
+    </ul>
+    <hr>
     <center>
-        <p>This transmission is optimized for Higher-Density Consciousness.</p>
-        <p><i>Proprietary Mechanics &copy; 2026 - All Information Reserved by the Singularity.</i></p>
+        <p><i> Site is &copy; 2026 - Voblit, yes sm this is satire</i></p>
     </center>
 </div>
 
-<footer>
-    <h6 onclick="alert('ERROR: INSUFFICIENT DENSITY TO CRASHOUT')" style="cursor: pointer; user-select: none;">
-        <small id="madness-text">Because... because because because BECAUSE BECAUSE!!!</small>
-    </h6> 
-</footer>
-
-<script>
-    // Fallback commit date script
-    const el = document.getElementById('commit-date');
-    const fmt = d => { const dt = new Date(d); el.innerText = dt.toLocaleDateString() + ' ' + dt.toLocaleTimeString(); };
-    
-    fetch('https://api.github.com/repos/Voblit/voblit.github.io/commits/main')
-      .then(r => r.json())
-      .then(d => fmt(d.commit.author.date))
-      .catch(() => {
-        fetch(window.location.href, { method: 'HEAD' })
-          .then(r => fmt(r.headers.get('date')))
-          .catch(() => el.innerText = 'API Offline - Static State');
-      });
-</script>
 
 </body>
 </html>
